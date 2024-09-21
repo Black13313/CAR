@@ -1,0 +1,15 @@
+export default interface UserMenuModel {
+  formNam?: string,
+  menuGroup: number,
+  menuID: number,
+  menuNameEng: string,
+  menuNameLao: string,
+  menuType: number,
+  pageurl?: string,
+  shortorder: number,
+  Menus: string,
+  status: number,
+  parent?: number,
+  children?: UserMenuModel[],
+  tblAllowedRoleMenus?: UserMenuModel[],
+}

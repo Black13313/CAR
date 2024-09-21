@@ -1,0 +1,41 @@
+export default interface BranchModel {
+    Id : number,
+    CompanyId : number,
+    BranchCode? : string ,
+    Branch :string,
+    branchid?: number,
+    Address : string,
+    ContactNumber? : string,
+    TaxNumber? : string,
+    IsLock? : boolean,
+    PrintAs? : string,
+    LogoPath? : string,
+    ActiveDate? : Date,
+    Status? : number,
+    CreateDateTime? : Date,
+    UpdateById? : number,
+    UpdateDateTime? : Date,
+    InterconnectAccountId? : number,
+    isHQ? : boolean 
+}
+
+export const defaultValue:BranchModel = {
+    ActiveDate: undefined,
+    Address: "",
+    Branch: "",
+    BranchCode: "",
+    CompanyId: 0,
+    ContactNumber: "",
+    CreateDateTime: undefined,
+    Id: 0,
+    InterconnectAccountId: 0,
+    IsLock: false,
+    LogoPath: "",
+    PrintAs: "",
+    Status: 0,
+    TaxNumber: "",
+    UpdateById: 0,
+    UpdateDateTime: undefined,
+    branchid: 0,
+    isHQ: false
+}

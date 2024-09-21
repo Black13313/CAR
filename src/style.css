@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+    font-family: "Noto Sans Lao", "Noto Sans", sans-serif;
+}
+
+@media print {
+    @page {
+        margin: 0;
+        padding: 0;
+        height: fit-content;
+    }
+
+    body {
+        visibility: hidden;
+    }
+
+    #receipt {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        visibility: visible;
+        background-color: #ffffff;
+        color: black !important;
+    }
+
+    #receipt.receipt-width {
+        width: 100vw;
+        box-shadow: none;
+        padding: 1rem;
+        color: black !important;
+    }
+}
